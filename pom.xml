@@ -4,10 +4,22 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>vcard</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>vcard</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
+   <repositories>
+    <repository>
+      <id>my-repo2</id>
+      <name>public</name>
+      <url>http://ip-172-31-7-48.ap-south-1.compute.internal:8081/nexus/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>my-repo1</id>
+      <name>your custom repo</name>
+      <url>http://maven.apache.org</url>
+    </repository>
+ </repositories>
+   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -15,16 +27,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-<distributionManagement>
+   <distributionManagement>
     <repository>
       <id>vcard-releases</id>
       <name>vcard-releases</name>
-      <url>http://ec2-107-23-210-82.compute-1.amazonaws.com:8081/nexus/content/repositories/vcard-releases/</url>
+      <url>http://ip-172-31-7-48.ap-south-1.compute.internal:8081/nexus/content/repositories/vcard-releases/</url>
     </repository>
     <snapshotRepository>
       <id>vcard-snapshots</id>
       <name>vcard-snapshots</name>
-      <url>http://ec2-107-23-210-82.compute-1.amazonaws.com:8081/nexus/content/repositories/vcard-snapshots/</url>
+      <url>http://ip-172-31-7-48.ap-south-1.compute.internal:8081/nexus/content/repositories/vcard-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
+
