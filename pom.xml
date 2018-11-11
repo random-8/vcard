@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>vcard</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOTS</version>
+  <version>1.0-snapshots</version>
   <name>vcard</name>
   <url>http://maven.apache.org</url>
    <repositories>
