@@ -3,3 +3,5 @@ trying to add some code
 local has change this line
 this could be conflict
 and......
+another line for cnflict
+and 7th line.
